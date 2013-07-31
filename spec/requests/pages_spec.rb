@@ -1,12 +1,13 @@
+# -*- encoding : utf-8 -*-
 require 'spec_helper'
 
-describe "Pages" do
+describe "Статические страницы >" do
 
-  describe "Home page" do
+  describe "Главная страница >" do
 
-    it "should have the content" do
-      visit '/pages/home'
-      page.should have_title('Helloworld - Home')
+    it "проверка title" do
+      visit root_path
+      page.should have_title('Helloworld')
     end
   end
 end
