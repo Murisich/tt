@@ -12,6 +12,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem "bootstrap-sass", "~> 2.3.2.1"
 gem "magic_encoding", "~> 0.0.2"
+gem "bcrypt-ruby", "~> 3.0.0"
 
 group :doc do
   gem 'sdoc', require: false
