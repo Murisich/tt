@@ -1,5 +1,6 @@
 # -*- encoding : utf-8 -*-
 module ApplicationHelper
+
   def full_title(page_title)
     base_title = "Helloworld"
     if page_title.empty?
