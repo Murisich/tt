@@ -3,9 +3,7 @@ require 'spec_helper'
 
 describe "Страницы пользователей >" do
 
-  subject { page }
-
-  describe "Страница регистации >" do
+  describe "Страница регистрации >" do
 
     it "проверка заголовка" do
       visit signup_path
