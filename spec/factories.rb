@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 FactoryGirl.define do
   factory :user do
-    name     "Alex Sharipin"
+    login     "Alex Sharipin"
     email    "murisich@gmail.com"
     password "foobar"
     password_confirmation "foobar"

@@ -1,7 +1,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: helloworld_development
+  database: tt_development
   pool: 5
   username: root
   password:
@@ -9,7 +9,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: helloworld_test
+  database: tt_test
   pool: 5
   username: root
   password:

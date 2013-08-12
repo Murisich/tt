@@ -4,13 +4,13 @@ require 'spec_helper'
 describe User do
 
   before do
-    @user = User.new(name: "Example User", email: "user@example.com",
+    @user = User.new(login: "Example User", email: "user@example.com",
                      password: "foobar", password_confirmation: "foobar")
   end
 
   subject { @user }
 
-  it { should respond_to(:name) }
+  it { should respond_to(:login) }
   it { should respond_to(:email) }
   it { should respond_to(:password_digest) }
   it { should respond_to(:password) }
@@ -20,8 +20,8 @@ describe User do
 
   it { should be_valid }
 
-  describe "Наличие name" do
-    before { @user.name = " " }
+  describe "Наличие login" do
+    before { @user.login = " " }
     it { should_not be_valid }
   end
 
@@ -30,10 +30,10 @@ describe User do
     it { should_not be_valid }
   end
 
-  describe "Валидация длины name" do
-    before { @user.name = "a" * 31 }
+  describe "Валидация длины login" do
+    before { @user.login = "a" * 31 }
     it { should_not be_valid }
-    before { @user.name = "a" * 5 }
+    before { @user.login = "a" * 5 }
     it { should_not be_valid }
   end
 
