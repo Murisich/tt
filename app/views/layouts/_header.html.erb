@@ -1,7 +1,6 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "Helloworld", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Главная", root_path %></li>
@@ -9,7 +8,7 @@
             <li><%= link_to "Пользователи", users_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Аккаунт <b class="caret"></b>
+                <%= current_user.name %> <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
                 <li><%= link_to "Профиль", current_user %></li>

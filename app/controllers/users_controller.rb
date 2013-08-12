@@ -6,7 +6,6 @@ class UsersController < ApplicationController
   before_filter :admin_user,     only: :destroy
 
   def show
-    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def index

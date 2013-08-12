@@ -10,8 +10,8 @@ class SessionsController < ApplicationController
         flash[:success] = "Вход выполнен"
         redirect_back_or user
       else
-        flash.now[:error] = 'Неверная почта/пароль'
-      	render 'new'
+        flash[:error] = 'Неверная почта/пароль'
+      	redirect_to signin_path
       end
   end
 
